@@ -28,9 +28,7 @@
     font-display: swap;
 }
 
-/* * {
-    font-family: 'TT Lakes'; 
-} */
+/* html --------------------------------------------------------- */
 
 body {
     background: #F8F8F8;
@@ -46,7 +44,7 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     
 }
 
-/* header--------------------------------------------------------- */
+/* header --------------------------------------------------------- */
 
 .header {
     background: #FFFFFF;
@@ -101,7 +99,6 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     background-image: url(image/chat.svg); 
 }
 
-
 .call-navigation, 
 .profile-navigation, 
 .chat-navigation, 
@@ -134,13 +131,14 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/* menu --------------------------------------------------------- */
+
 .menu { 
     width: 100%;
     display: flex;
     margin: 16px 0 24px 0;
     justify-content: space-between;
 }
-
 
 .active-menu-title {
     margin-left: 12px;
@@ -214,6 +212,9 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
 /* media 767px --------------------------------------------------------- */
 
 @media (min-width: 767px) {
+
+    /* header -------- */
+
     .navigation_menu {
         margin: 0 24px 0 24px;
     }
@@ -243,6 +244,8 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     .divider_after_logo {
         display: none;
     }
+
+    /* main ----------- */
 
     .menu { 
         margin-bottom:  32px;
@@ -290,6 +293,9 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
 /* media 1120px --------------------------------------------------------- */
 
 @media (min-width: 1120px) {
+
+    /* header --------- */
+
     .header {
         display: none; 
     }
@@ -317,6 +323,8 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
     .active-menu-title {
         margin-left: 32px;
     }
+
+    /* main ----------- */
 
     .menu {
         margin-top: 42px;
@@ -351,8 +359,6 @@ a, p, label, h1, h2, h3, h4, h5, h6 {
         display: flex;
         margin-top: 20px;
     }
-
-    
 
     .read-next {
         margin-top: 14px;
