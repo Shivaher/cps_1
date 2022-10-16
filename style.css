@@ -1,91 +1,11 @@
 @font-face {
     font-family: 'TT Lakes';
     src: 
-         url('fonts/TTLakes-ExtraLightItalic.woff') format('woff'),
-         url('fonts/TTLakes-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src:
-         url('fonts/TTLakes-LightItalic.woff') format('woff'),
-         url('fonts/TTLakes-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-Thin.woff') format('woff'),
-         url('fonts/TTLakes-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-DemiBoldItalic.woff') format('woff'),
-         url('fonts/TTLakes-DemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-ExtraBoldItalic.woff') format('woff'),
-         url('fonts/TTLakes-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src:
-         url('fonts/TTLakes-ExtraLight.woff') format('woff'),
-         url('fonts/TTLakes-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
          url('fonts/TTLakes-Bold.woff') format('woff'),
          url('fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-DemiBold.woff') format('woff'),
-         url('fonts/TTLakes-DemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src:
-         url('fonts/TTLakes-Black.woff') format('woff'),
-         url('fonts/TTLakes-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-MediumItalic.woff') format('woff'),
-         url('fonts/TTLakes-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -95,6 +15,7 @@
          url('fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -104,51 +25,12 @@
          url('fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'TT Lakes';
-    src:
-         url('fonts/TTLakes-BoldItalic.woff') format('woff'),
-         url('fonts/TTLakes-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-ThinItalic.woff') format('woff'),
-         url('fonts/TTLakes-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-BlackItalic.woff') format('woff'),
-         url('fonts/TTLakes-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: 
-         url('fonts/TTLakes-ExtraBold.woff') format('woff'),
-         url('fonts/TTLakes-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('fonts/TTLakes-Light.woff') format('woff'),
-         url('fonts/TTLakes-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
+/* * {
+    font-family: 'TT Lakes'; 
+} */
 
 body {
     background: #F8F8F8;
@@ -157,77 +39,102 @@ body {
     
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+
+a, p, label, h1, h2, h3, h4, h5, h6 {
     font-family: 'TT Lakes';
+    margin: 0;
     
 }
 
-p {
-    margin: 0;
-    font-family: 'TT Lakes';
-}
+/* header--------------------------------------------------------- */
 
-
-a {
-    font-family: 'TT Lakes';
-    
-}
-
-
-
-.nav_menu {
-    height: 88px;
+.header {
     background: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.img_nav {
-    display: flex;
-    align-items: center;
 }
 
 
-.logo {
+.navigation_menu {
+    height: 88px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 0 16px 0 16px;
+}
+
+.icon_navigation {
+    width: 40px;
+    height: 40px; 
+}
+
+.burger-navigation {
+    background-image: url(image/burger.svg);
+}
+
+.divider {
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+}
+
+.logo_navivagion {
     width: 96px;
-    height: 50px;
-    
+    height: 51px;
 }
 
-.call-nav, .chat-nav, .profile-nav, .divider_2-nav {
+.repair-navigation {
+    background-image: url(image/repair.svg);
+}
+
+.checkstatus-navigation {
+    background-image: url(image/checkstatus.svg);
+}
+
+.call-navigation {
+    background-image: url(image/call.svg);
+}
+
+.profile-navigation {
+    background-image: url(image/profile.svg); 
+}
+
+.chat-navigation {
+    background-image: url(image/chat.svg); 
+}
+
+
+.call-navigation, 
+.profile-navigation, 
+.chat-navigation, 
+.divider_before_logo, 
+.divider_after_profile {
     display: none;
 }
 
-
-.call, .chat, .profile, .divider_2, .divider_1{
-    display: none;
+.description-cps_image {
+    width: 100%;  
 }
 
-.more-text {
-    display: none;
+.shadow_navigation {
+    width: 100%;
+    height: 1px;
+    background-color: #D9FFF5;
+}
+
+/* content --------------------------------------------------------- */
+
+.side-highlight {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius:  0px 10px 10px 0px;
+    margin-right: 12px;
 }
 
 .active-menu_side-nav {
     display: none;
 }
 
-.cps_logo {
-    width: 100%;  
-}
-
-.shadow {
-    width: 100%;
-    height: 1px;
-    background-color: #D9FFF5;
-}
-
-.side-active {
-    margin-right: 12px;
-}
-
-.active-menu {
+.menu { 
     width: 100%;
     display: flex;
     margin: 16px 0 24px 0;
@@ -267,22 +174,31 @@ a {
     display: none;
 }
 
-.menu {
+.active-menu {
     display: flex;
     overflow: scroll;
     margin-bottom: 24px;
 }
 
-.description {
+/* description --------------------------------------------------------- */
+
+.detailed-description {
     display: flex;
     flex-direction: column;
 }
 
 .description_text {
-    margin: 0 0 16px 16px
+    margin: 0 16px 16px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
 }
 
-.read {
+.more-descrition-text {
+    display: none;
+}
+
+.expand_read-text {
     font-weight: 500;
     font-family: 'TT Lakes';
     font-size: 16px;
@@ -292,55 +208,100 @@ a {
 
 .read-next {
     display: flex;
-    margin: 16px 0 0 16px;
+    margin: 16px 0 0 0px;
 }
 
+/* media 767px --------------------------------------------------------- */
+
 @media (min-width: 767px) {
-    .call-nav, .profile-nav, .chat-nav {
-        display: flex;
-        align-self: center;
-        float: right;
+    .navigation_menu {
+        margin: 0 24px 0 24px;
     }
 
-     .call, .chat, .profile, .divider_1 {
-        display: flex;
-        align-self: center;
-        float: right;
+    .logo_navivagion {
+        margin-right: auto;
+    }
+
+    .icon_navigation {
+        display: block;
+        margin: 0 16px 0 0;  
+    }
+
+    .profile-navigation,
+    .checkstatus-navigation,
+    .burger-navigation {
+        margin-right: 0;
+    }
+
+    .divider_after_profile,
+    .divider_before_logo {
+        display: block;
+        margin: 0 20px 0 20px;
+    }
+
+
+    .divider_after_logo {
+        display: none;
+    }
+
+    .menu { 
+        margin-bottom:  32px;
+    }
+
+    .active-menu-title {
+        margin-left: 20px;
+    }
+
+    .active-menu {
+        margin-bottom:  32px;
     }
 
     .description {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
 
+    .detailed-description {
+        width: 720px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
     .description_text {
-        width: 100%;
+        width: 312px;
+        height: 208px;
+        margin: 0px ; 
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .description-cps_image {
+        width: 360px;
+        border-radius: 10px;
     }
  
     .read-next {
         margin-top: 10px;
     }
 
-    .cps_logo {
-        width: 100%;
-        border-radius: 20px;
-    }
-
 }
 
+/* media 1120px --------------------------------------------------------- */
+
 @media (min-width: 1120px) {
-    header {
+    .header {
         display: none; 
     }
 
-    .repair-nav, .checkstatus-nav {
+    .side_repair-navigation, .side_checkstatus-navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 32px;
     }
     
-    .submit, .checkstatus-text {
+    .submit_application, .repair_status {
         margin-right: 8px;
         font-weight: 500;
         font-size: 16px;
@@ -349,26 +310,52 @@ a {
     }
 
     .active-menu {
-        margin-top: 42px;
+        flex-wrap: wrap;
+        margin-left: 32px;
+        }
+
+    .active-menu-title {
+        margin-left: 32px;
     }
 
     .menu {
-    flex-wrap: wrap;
-    }
-
-    .more-text {
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .side-nav {
-        display: flex;
-        justify-content: space-between;
+        margin-top: 42px;
+        margin-bottom: 8px;
     }
 
     .active-menu_side-nav  {
         display: flex;
     }
 
+    .description {
+        display: flex;
+        justify-content: center;
+    }
+
+    .detailed-description {
+        width: 1057px;
+        margin-left: 34px;
+        margin-right: 28px;
+        justify-content: space-between;
+    }
+
+    .description_text {
+        width: 490px;
+    }
+
+    .description-cps_image {
+        width: 531px;
+    }
+
+    .more-descrition-text {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    
+
+    .read-next {
+        margin-top: 14px;
+    } 
 
 }

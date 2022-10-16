@@ -1,71 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel='stylesheet' href='style.css'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>CPS</title>
 </head>
 <body>
-    <header>
-        <nav class="nav_menu">
-           
-            <div class="burger-nav"><img class='img_nav burger' src='image/burger.svg' alt=''></div>
-            <img class='divider_1' src='image/divider.svg' alt=''>
-            <div class="logo_nav"><img class='img_nav logo' src='image/Logo.svg' alt=''></div>
-            <img class='divider_2' src='image/divider.svg' alt=''>
-     
-            <div class="call-nav"><img class='img_nav call' src='image/call.svg' alt=''></div>
-            <div class="chat-nav"><img class='chat' src='image/chat.svg' alt=''></div>
-            <div class="profile-nav"><img class='img_nav profile' src='image/profile.svg' alt=''></div>
-            <img class='divider_3' src='image/divider.svg' alt=''>
-            <div class="repair-nav"><img class='img_nav repair' src='image/repair.svg' alt=''></div>
-            <div class="checkstatus-nav"><img class='img_nav checkstatus' src='image/checkstatus.svg' alt=''></div>
+    <header class="header">
         
-        </nav>
-        <div class="shadow"> </div>
+            <nav class="navigation_menu">
+           
+                <div class="icon_navigation burger-navigation"></div>
+                <div class='divider divider_before_logo'></div>
+                <img class="logo_navivagion" src="image/Logo.svg">
+
+                <div class='divider divider_after_logo'></div>
+     
+                <div class="icon_navigation call-navigation"></div>
+                <div class="icon_navigation chat-navigation"></div>
+                <div class="icon_navigation             profile-navigation"></div>
+
+                <div class='divider divider_after_profile'></div>
+
+                <div class="icon_navigation repair-navigation"></div>
+                <div class="icon_navigation checkstatus-navigation"></div>
+            </nav>
+        
+        
+        <div class="shadow_navigation"></div>
     </header>
     <main>
         <div class="content">
-            <div class="active-menu"> 
+            <div class="menu"> 
         
-                     <img class="side-active" src="image/highlight_side.svg" alt="">
+                     <div class="side-highlight"></div>
                      <h1 class="active-menu-title">Услуги и сервисы</h1>
                 
                 <div class="active-menu_side-nav">
-                    <div class="repair-nav"><p class="submit">Оставить заявку</p><img class='img_nav repair' src='image/repair.svg' alt=''></div>
-                    <div class="checkstatus-nav"><p class="checkstatus-text">Статус ремонта</p><img class='checkstatus' src='image/checkstatus.svg' alt=''></div>
+                    <div class="side_repair-navigation">
+                        <label class="submit_application">Оставить заявку</label>
+                        <div class='icon_navigation repair-navigation'></div>
+                    </div>
+                    <div class="side_checkstatus-navigation">
+                        <label class="repair_status">Статус ремонта</label>
+                        <div class='icon_navigation checkstatus-navigation'></div>
+                    </div>
                 </div>
             </div> 
-            </div>  <!-- active-menu -->
-                <div class="menu">
+            </div>  <!-- -menu -->
+                <div class="active-menu">
                     <a class="active-menu-link" href="">Ремонтируемые устройства</a>
                     <a class="active-menu-link" href="">Дополнительные услуги</a>
                     <a class="active-menu-link" href="">Цены на услуги</a>
                     <a class="active-menu-link" href="">Адреса сервисных центров </a>
                     <a class="active-menu-link" href="">Специальные цены </a>
                     <a class="active-menu-link" href="">Отзывы</a>
-                </div>
+                </div>  <!-- active-menu -->
             <div class="description">
-                <div class="description_text">
-                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                <div class="detailed-description">
+                    <div class="description_text">
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                        
-                    <p class="more-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </p>
-                    <div class="read-next">
-                        <img class="expand" src="image/expand.svg" alt="">
-                        <span class="read">Читать далее</span>
-                    </div>
-                </div>
-                <img class="cps_logo" src="image/CPS_Logo.png" alt="">
-            </div>
+                        <p class="more-descrition-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                        </p>
+                        <div class="read-next">
+                            <img class="expand" src="image/expand.svg" alt="">
+                            <span class="expand_read-text">Читать далее</span>
+                        </div>
+                    </div> <!-- description-text -->
+                    <img class="description-cps_image" src="image/CPS_Logo.png" alt="">
+                </div> <!-- detailed-description -->
+            </div> <!-- description -->
         </div>  <!-- content -->
     </main>
     
 </body>
 </html>
-
-<!-- Единственное, что я не смог реализовать это 767px часть меню отправить вправо. И margin auto и grid пытался, но всё не то. Можно прописывать для каждого элемента margin, в грид, но я мне кажется можно легче все сделать через display: flex.
-Можешь направить меня в нужном направлении? :) -->
