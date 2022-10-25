@@ -273,7 +273,7 @@ aside {
 }
 
 .aside-menu-link:hover, .aside-footer-lg-link:hover {
-    opacity: 0.7;
+    color: #7E7E82;
 }
 
 .aside-footer-icons .icon_navigation {
