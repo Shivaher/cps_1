@@ -219,12 +219,12 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
 
 /* aside ---------------------------------------------------------------- */
 
-aside {
+.aside-content {
     display: flex;
     width: 320px;
     background-color: #FFFFFF;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .aside-navigation {
@@ -246,7 +246,10 @@ aside {
 
 .aside-active-menu {
     display: grid;
-    margin-bottom: 268px;
+}
+
+.aside-menu {
+    margin-bottom: auto;
 }
 
 .link {
@@ -258,21 +261,23 @@ aside {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    display: inline-block;
-    padding: 8px 9px;
-    box-sizing: border-box;
-    padding: 16px 24px;
+    margin-bottom: 32px;
+
     position: relative;
+}
+
+.aside-menu-link .link {
+    margin-left: 24px;
 }
 
 .aside-menu-link:hover::before {
     content: url(image/highlight.svg);
+    top: -6px;
+
     position: absolute;
-    left: 0; 
-    top: 10px;
 }
 
-.aside-menu-link:hover, .aside-footer-lg-link:hover {
+.aside-menu-link:hover .link, .aside-footer-lg-link:hover {
     color: #7E7E82;
 }
 
@@ -285,6 +290,7 @@ aside {
 .aside-footer {
     margin-bottom: 32px;
     margin-left: 24px;
+    justify-content: end;
 }
 
 .aside-footer-icons {
@@ -306,6 +312,8 @@ aside {
     font-size: 24px;
     font-weight: 700;
 }
+
+/*---------------------!!!!!!!!!!!!!!!!------------------ Всё по макету, и высота регулируется, но я всё равно не смог translate'ом сделать before. Ссылки меню начисют прыгать  */ 
 
 
 /* media 767px --------------------------------------------------------- */
