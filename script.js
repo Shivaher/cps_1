@@ -7,7 +7,6 @@ const swiper = new Swiper('.swiper',
 }
 );
 
-let cardContentWrapper = document.querySelector(".brands-menu-wrap");
 let showDown = document.querySelector('.show-down-btn');
 let showDownImg = document.querySelector('.show-down-img');
 let showContainers = document.querySelector(".show-container")
