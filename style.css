@@ -313,7 +313,7 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     font-weight: 700;
 }
 
-/*---------------------!!!!!!!!!!!!!!!!------------------ Всё по макету, и высота регулируется, но я всё равно не смог translate'ом сделать before. Ссылки меню начисют прыгать  */ 
+/*---------------------!!!!!!!!!!!!!!!!------------------ Всё по макету, и высота регулируется, но я всё равно не смог translate'ом сделать before. Ссылки меню начинают прыгать  */ 
 
 
 /* media 767px --------------------------------------------------------- */
@@ -393,6 +393,16 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
  
     .read-next {
         margin-top: 10px;
+    }
+
+    /* swiper ----------- */
+
+    .brands-menu {
+        display: block;
+    }
+
+    .swiper {
+        display: none;
     }
 
 }
@@ -475,3 +485,147 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
 
 }
 
+/* ------------------------swiper------------------------------ */
+
+.swiper-header {
+    height: 80px;
+    background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    margin-bottom: 16px;
+  }
+
+  .swiper-header_title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding: 16px;
+    display: inline-block;
+  }
+
+.swiper-content {
+    background-color: #F8F8F8;
+}
+
+.swiper {
+    max-width: 320px;
+    height: 116px;
+}
+
+ .brand-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 24px; */
+    width: 240px;
+    height: 72px;
+    background-color: #ffffff;
+    border-radius: 5px;
+ }
+
+ .swiper-icon-next {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-image: url(image/Swiper_img/next.svg);
+ }
+
+ .swiper-logo {
+    margin: 20px 0px 20px 16px;
+ }
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.brands-menu {
+    display: none;
+}
+
+.show-down {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.show-down-btn {
+    font-size: 16px;
+    color: #1B1C21;
+    font-family: TTLakes, sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.show-down-img {
+
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+
+
+/* ---------------------------desktop-swiper----------------------------------------- */
+
+.brands-menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 0;
+}
+
+/* ----------------------------swiper media----------------------------------------- */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .swiper {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .brands-menu {
+        display: block;
+    }
+    
+    .brand-container {
+        width: 224px;
+        margin-left: 24px;
+    }
+
+    .brand-container {
+        margin-left: 24px;
+    }
+
+    .hide-desktop-containers {
+        display: none;
+    }
+
+    .show-container {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1119px) {
+    .brands-menu {
+        display: block;
+    }
+
+    .brand-container {
+        margin-left: 32px;
+    }
+
+    .show-container {
+        display: none;
+    }
+
+}
