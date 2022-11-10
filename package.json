@@ -1,0 +1,19 @@
+{
+  "name": "cps_1",
+  "version": "1.0.0",
+  "description": "Web course CPS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivaher/cps_1.git"
+  },
+  "author": "Frolov Dmitrii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shivaher/cps_1/issues"
+  },
+  "homepage": "https://github.com/Shivaher/cps_1#readme"
+}

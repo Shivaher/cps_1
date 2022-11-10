@@ -40,6 +40,7 @@ body {
     padding: 0;
     margin: 0;
     
+    min-width: 0;
 }
 
 
@@ -217,11 +218,17 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     margin: 16px 0 0 0px;
 }
 
+.swiper-header {
+    margin-top: 8px;
+}
+
+
+
 /* aside ---------------------------------------------------------------- */
 
 .aside-content {
     display: flex;
-    width: 320px;
+    max-width: 360px;
     background-color: #FFFFFF;
     flex-direction: column;
     min-height: 100vh;
@@ -313,9 +320,6 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     font-weight: 700;
 }
 
-/*---------------------!!!!!!!!!!!!!!!!------------------ Всё по макету, и высота регулируется, но я всё равно не смог translate'ом сделать before. Ссылки меню начинают прыгать  */ 
-
-
 /* media 767px --------------------------------------------------------- */
 
 @media (min-width: 767px) {
@@ -395,15 +399,12 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
         margin-top: 10px;
     }
 
+    .swiper-header {
+        margin-top: 24px;
+        height: 56px;
+    }
+
     /* swiper ----------- */
-
-    .brands-menu {
-        display: block;
-    }
-
-    .swiper {
-        display: none;
-    }
 
 }
 
@@ -435,8 +436,8 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     .active-menu {
         flex-wrap: wrap;
         margin-left: 32px;
-        overflow-y:hidden; 
-        overflow-x:hidden;
+        overflow-y: hidden; 
+        overflow-x: hidden;
         }
 
     .active-menu-title {
@@ -481,11 +482,19 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
 
     .read-next {
         margin-top: 14px;
-    } 
+    }
+
+    .swiper-header {
+        margin-top: 24px;
+        height: 56px;
+    }
+
+
 
 }
 
 /* ------------------------swiper------------------------------ */
+
 
 .swiper-header {
     height: 80px;
@@ -503,13 +512,12 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     display: inline-block;
   }
 
-.swiper-content {
-    background-color: #F8F8F8;
+.swiper {
+    height: 116px;
 }
 
-.swiper {
-    max-width: 320px;
-    height: 116px;
+.swiper-wrapper {
+    margin-left: 16px;
 }
 
  .brand-container {
@@ -564,15 +572,9 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     background-color: #F8F8F8;
 }
 
-.show-down-img {
-
-}
-
 .reverse {
     transform: rotate(180deg);
 }
-
-
 
 /* ---------------------------desktop-swiper----------------------------------------- */
 
@@ -590,7 +592,7 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1118px) {
     .brands-menu {
         display: block;
     }
@@ -600,15 +602,19 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
         margin-left: 24px;
     }
 
-    .brand-container {
-        margin-left: 24px;
-    }
-
     .hide-desktop-containers {
         display: none;
     }
 
     .show-container {
+        display: none;
+    }
+
+    .brands-menu {
+        display: block;
+    }
+
+    .swiper {
         display: none;
     }
 
@@ -628,4 +634,132 @@ a, p, label, h1, h2, h3, h4, h5, h6, ul, li {
         display: none;
     }
 
+    .swiper {
+        display: none;
+    }
+
 }
+
+/* swiper2 repair------------------------------------------------------ */
+
+.swiper-repair {
+    height: 204px;
+}
+
+.slide-repair-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 24px; */
+    width: 240px;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.slide-repair-container .swiper-icon-next {
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-bottom: 16px;
+}
+
+.slide-repair-title {
+    margin-top: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
+    font-weight: 500; 
+}
+
+/* swiper cost -------------------------------------------------------------- */
+
+.swiper-cost {
+    height: 244px;
+}
+
+.swiper-wrapper-cost {
+    margin-left: 8px;
+}
+
+.cost-container {
+    
+}
+
+.slide-cost-container {
+    display: grid;
+    /* justify-content: space-between; */
+    align-items: center;
+    letter-spacing: 0.2px;
+    width: 228px;
+    height: 168px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    padding: 16px;
+}
+
+.services-cost, .repair-services, .repair-time_block {
+}
+
+.services-detail {
+    color: #7E7E82;
+    margin-bottom: 4px;
+}
+
+
+.repair-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.give_order {
+    background-image: url(image/order_button.svg);
+    height: 32px;
+    width: 119px;
+    align-self: flex-end;
+}
+
+/* description cost------------------------------------------------------- */
+
+.about-cost {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 0 16px;
+    margin-bottom: 15px;
+}
+
+.commercial {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-left: 16px ;
+    margin-right: 112px;
+}
+
+.commercial-text::after {
+    content: url(image/commercial_arrow.svg);
+    margin-left: 6px;
+    vertical-align: -2px;
+}
+
+/* foter--------------------------------------------------------------------------- */
+
+.footer {
+    height: 147px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    margin-top: 16px;
+    display: grid;
+    gap: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #7E7E82;
+    opacity: 0.72;
+}
+
